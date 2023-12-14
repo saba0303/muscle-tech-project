@@ -1,0 +1,151 @@
+.checkout-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+        border-bottom: 5px solid black;
+        font-family: 'Candal', sans-serif;
+        font-size: 2rem;
+    }
+
+}
+
+.checkout-body {
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    .purchased-list {
+        width: 60%;
+        height: 100%;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .purchased-item {
+            height: 40%;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            article {
+                width: 40%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+
+                .item-data {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+
+                    justify-content: center;
+                    gap: 5px;
+
+                    #item-name {
+                        font-family: 'Dhurjati', sans-serif;
+                        font-size: 1.3rem;
+                    }
+
+                    #item-price {
+                        font-family: 'Source Code Pro', monospace;
+                        font-size: 1.1rem;
+                    }
+                }
+
+            }
+
+            .item-acts {
+                width: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                span {
+                    padding: 10px;
+                    border: 1px solid #F1F1F1;
+                    font-family: 'Dhurjati', sans-serif;
+                    color: rgb(45, 44, 44);
+                    font-size: 1.1rem;
+                    cursor: pointer;
+                }
+            }
+
+            #item-total-price {
+                font-family: 'Dhurjati', sans-serif;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .summerize {
+        width: 25%;
+        height: 100%;
+        background-color: #F1F1F1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                margin-left: 2rem;
+                font-family: 'Candal', sans-serif;
+            }
+
+            span {
+                margin-right: 2rem;
+                font-family: 'Candal', sans-serif;
+                font-size: 1.2rem;
+            }
+
+        }
+
+        span {
+            margin-left: 2rem;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        button {
+            align-self: center;
+            padding: 15px 40px;
+            font-family: 'Candal', sans-serif;
+            background-color: black;
+            color: white;
+            border: none;
+            transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+            cursor: pointer;
+
+            &:hover {
+                background: none;
+                border: 1px solid white;
+                color: black;
+            }
+        }
+    }
+}

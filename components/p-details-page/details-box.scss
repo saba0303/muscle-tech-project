@@ -1,0 +1,230 @@
+.details-data-container {
+    margin-top: 2.5rem;
+    width: 28%;
+    height: 90%;
+    background-color: white;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .details-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+
+        .review {
+            margin-left: 2rem;
+            width: 90%;
+            font-family: 'Grandstander', cursive;
+            font-size: .9rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .sale-state {
+            margin-left: 2rem;
+            border-radius: 18px;
+            background-color: #60269E;
+            font-family: 'Abril Fatface', serif;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: flex-start;
+            padding: 3px 10px;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-family: 'Abril Fatface', serif;
+            margin-left: 2rem;
+            margin-top: 5px;
+        }
+
+        .rating {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 2rem;
+            margin-top: -2rem;
+            gap: 5px;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+
+            span {
+                font-size: 1.1rem;
+                font-family: 'Abril Fatface', serif;
+            }
+        }
+
+        .price {
+            font-size: 2rem;
+            font-family: 'Abril Fatface', serif;
+            margin-left: 2rem;
+        }
+    }
+
+    .cart-actions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+        align-items: center;
+
+        div {
+            display: flex;
+            align-items: center;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 1.5rem;
+            margin-left: 2rem;
+            align-self: flex-start;
+
+            .actionr {
+                padding: 5px 17px;
+                border: .5px solid #F1F1F1;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #F1F1F1;
+                }
+            }
+
+            .actionl {
+                padding: 5px 17px;
+                border: .5px solid #F1F1F1;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #F1F1F1;
+                }
+            }
+
+            .value {
+                padding: 5px 17px;
+                border: .5px solid #F1F1F1;
+
+                &:hover {
+                    background-color: #F1F1F1;
+                }
+            }
+        }
+
+        .cart-adder {
+            margin-top: 1rem;
+            background-color: #60269E;
+            color: white;
+            font-size: 1.3rem;
+            border-radius: 18px;
+            border: none;
+            font-family: 'Abril Fatface', serif;
+            padding: 5px 0px;
+            width: 90%;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+
+        }
+    }
+
+    .more-details-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        .expander-container {
+            width: 90%;
+            background-color: #F1F1F1;
+            display: flex;
+            flex-direction: column;
+            padding: 5px 0px;
+            cursor: pointer;
+            align-items: center;
+
+
+            .more-detail-box {
+                margin-top: .5rem;
+                border-top: .5px solid rgb(208, 197, 197);
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 2px;
+
+
+                p {
+                    font-family: 'Source Code Pro', monospace;
+                    font-size: .9rem;
+                    margin-top: .5rem;
+                    margin-bottom: .5rem;
+                }
+
+                img {
+                    margin-top: .5rem;
+                    margin-bottom: .5rem;
+                }
+
+                .faqs {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+
+                    h4 {
+                        font-family: 'Grandstander', cursive;
+                    }
+                }
+            }
+
+            .template-header {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                span {
+                    font-family: 'Dhurjati', sans-serif;
+                    font-size: 1.3rem;
+                }
+
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@media (max-width:1016px) {
+    .collections-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 8rem;
+        border-top: .2px solid rgb(176, 173, 173);
+        border-bottom: .2px solid rgb(176, 173, 173);
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-family: 'Candal', sans-serif;
+
+            }
+
+            #path {
+
+                font-family: 'Abril Fatface', serif;
+                font-size: .9rem;
+
+            }
+
+            span {
+                font-family: 'Grandstander', cursive;
+            }
+
+
+        }
+    }
+}
+
+@media(min-width:1016px) {
+    .collections-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 8rem;
+        border-top: .2px solid rgb(176, 173, 173);
+        border-bottom: .2px solid rgb(176, 173, 173);
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-family: 'Candal', sans-serif;
+
+            }
+
+            #path {
+                margin-left: 7rem;
+                font-family: 'Abril Fatface', serif;
+                font-size: .9rem;
+
+            }
+
+            span {
+                margin-right: 2rem;
+                font-family: 'Grandstander', cursive;
+            }
+
+
+        }
+    }
+}

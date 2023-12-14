@@ -1,0 +1,472 @@
+@media (min-width:1016px) {
+    .cart {
+        width: 30%;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0rem;
+
+        .checkout {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+            padding: 15px 0px;
+            font-family: 'Candal', sans-serif;
+            font-size: .9rem;
+            cursor: pointer;
+        }
+
+        .empty-cart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin: auto auto;
+
+
+
+            span {
+                font-family: 'Source Code Pro', monospace;
+            }
+
+            a {
+                text-decoration: none;
+                background-color: black;
+                color: white;
+                font-family: 'Candal', sans-serif;
+                padding: 15px 25px;
+                font-size: .9rem;
+                transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+
+                &:hover {
+                    background-color: white;
+                    border: 1px solid black;
+                    color: black;
+                }
+            }
+        }
+
+        .cart-header {
+            width: 100%;
+            height: 6rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: .5px solid rgb(188, 184, 184);
+
+            #exit {
+                margin-right: 2rem;
+                width: 15px;
+                height: 15px;
+                cursor: pointer;
+            }
+
+            div {
+                margin-left: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                span {
+                    font-family: 'Abril Fatface', serif;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .cart-list {
+            width: 90%;
+            height: 70%;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            border-bottom: .5px solid rgb(188, 184, 184);
+            padding-bottom: 1rem;
+
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .cart-item {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .item-details {
+                    display: flex;
+                    flex-direction: column;
+                    width: 75%;
+
+                    header {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        h2 {
+                            font-size: .9rem;
+                            font-family: 'Abril Fatface', serif;
+                        }
+
+                        span {
+                            font-family: 'Dhurjati', sans-serif;
+                            font-size: 1.2rem;
+                            margin-right: .5rem;
+                        }
+                    }
+
+                    .ingrs {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 10px;
+
+                        a {
+                            color: #60269E;
+                            font-size: .9rem;
+                            font-family: 'Candal', sans-serif;
+                            text-decoration: none;
+                        }
+                    }
+
+                    .on-sale {
+                        background-color: #282828;
+                        display: flex;
+                        align-items: center;
+                        width: 80%;
+                        margin-top: 1rem;
+                        height: 2.8rem;
+                        gap: 10px;
+                        justify-content: space-evenly;
+                        border-radius: 5px;
+
+                        span {
+                            color: white;
+                            font-family: 'Source Code Pro', monospace;
+                            font-size: .8rem;
+                            width: 75%;
+                        }
+                    }
+
+                    .item-actions {
+                        margin-top: 1rem;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        button {
+                            border: none;
+                            background: none;
+                            font-family: 'Abril Fatface', serif;
+                            color: #969696;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+
+                        .qty-actions {
+                            display: flex;
+                            align-items: center;
+                            border: 1px solid #F1F1F1;
+                            justify-content: center;
+
+
+
+                            span {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                font-size: 1.2rem;
+                                font-family: 'Source Code Pro', monospace;
+                            }
+
+                            #i,
+                            #d {
+                                font-family: 'Candal', sans-serif;
+                                font-size: 1.3rem;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media(max-width:1016px) {
+    .cart {
+        width: 60%;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0rem;
+
+        .checkout {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+            padding: 15px 0px;
+            font-family: 'Candal', sans-serif;
+            font-size: .9rem;
+            cursor: pointer;
+        }
+
+        .empty-cart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin: auto auto;
+
+
+
+            span {
+                font-family: 'Source Code Pro', monospace;
+            }
+
+            a {
+                text-decoration: none;
+                background-color: black;
+                color: white;
+                font-family: 'Candal', sans-serif;
+                padding: 15px 25px;
+                font-size: .9rem;
+                transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+
+                &:hover {
+                    background-color: white;
+                    border: 1px solid black;
+                    color: black;
+                }
+            }
+        }
+
+        .cart-header {
+            width: 100%;
+            height: 6rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: .5px solid rgb(188, 184, 184);
+
+            #exit {
+                margin-right: 2rem;
+                width: 15px;
+                height: 15px;
+                cursor: pointer;
+            }
+
+            div {
+                margin-left: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                span {
+                    font-family: 'Abril Fatface', serif;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .cart-list {
+            width: 100%;
+            height: 70%;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            border-bottom: .5px solid rgb(188, 184, 184);
+            padding-bottom: 1rem;
+
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .cart-item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                .item-details {
+                    display: flex;
+                    flex-direction: column;
+                    width: 75%;
+
+                    header {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        h2 {
+                            font-size: .9rem;
+                            font-family: 'Abril Fatface', serif;
+                        }
+
+                        span {
+                            font-family: 'Dhurjati', sans-serif;
+                            font-size: 1.2rem;
+                            margin-right: .5rem;
+                        }
+                    }
+
+                    .ingrs {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 10px;
+
+                        a {
+                            color: #60269E;
+                            font-size: .9rem;
+                            font-family: 'Candal', sans-serif;
+                            text-decoration: none;
+                        }
+                    }
+
+                    .on-sale {
+                        background-color: #282828;
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        margin-top: 1rem;
+                        height: 2.8rem;
+                        gap: 10px;
+                        justify-content: space-evenly;
+                        border-radius: 5px;
+
+                        span {
+                            color: white;
+                            font-family: 'Source Code Pro', monospace;
+                            font-size: .8rem;
+                            width: 75%;
+                        }
+                    }
+
+                    .item-actions {
+                        margin-top: 1rem;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        button {
+                            border: none;
+                            background: none;
+                            font-family: 'Abril Fatface', serif;
+                            color: #969696;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+
+                        .qty-actions {
+                            display: flex;
+                            align-items: center;
+                            border: 1px solid #F1F1F1;
+                            justify-content: center;
+
+
+
+                            span {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                font-size: 1.2rem;
+                                font-family: 'Source Code Pro', monospace;
+                            }
+
+                            #i,
+                            #d {
+                                font-family: 'Candal', sans-serif;
+                                font-size: 1.3rem;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

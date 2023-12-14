@@ -1,0 +1,94 @@
+.explore-data {
+    margin-top: 2rem;
+    background-color: black;
+    width: 100%;
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+
+    header {
+        width: 100%;
+
+
+        h1 {
+            color: white;
+            font-family: 'Candal', sans-serif;
+            font-size: 2.5rem;
+            margin-left: 2rem;
+        }
+
+        span {
+            color: white;
+            margin-left: 2rem;
+            font-size: 1.3rem;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+    }
+}
+
+.explore-slider {
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            opacity: 1;
+            scale: 2
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #60269E;
+
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: #60269E;
+        font-size: 5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 3rem;
+        height: 3rem;
+        opacity: 0;
+
+
+    }
+
+    .swiper-button-prev {
+        content: url('../../public/icons/prev.png');
+    }
+
+    .swiper-button-next {
+        content: url('../../public/icons/next.png');
+    }
+
+
+    .explore-slide {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+
+        img {
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        h2 {
+            font-family: 'Candal', sans-serif;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Grandstander', cursive;
+            font-size: 1.3rem;
+        }
+
+    }
+}

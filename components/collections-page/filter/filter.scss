@@ -1,0 +1,82 @@
+// #fixed {
+//     position: fixed;
+//     bottom: 0;
+// }
+
+@media (max-width:1016px) {
+    .filter-aside {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: space-between;
+
+        h2 {
+            font-family: 'Abril Fatface', serif;
+            letter-spacing: 1.5px;
+            display: none;
+        }
+
+        .filter-box {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            border-top: .2px solid rgb(176, 173, 173);
+
+            .filter-type {
+                width: 100%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                padding: 10px 0px;
+
+                h3 {
+                    font-family: 'Source Code Pro', monospace;
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1016px) {
+    .filter-aside {
+        width: 20%;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+
+        h2 {
+            font-family: 'Abril Fatface', serif;
+            letter-spacing: 1.5px;
+        }
+
+        .filter-box {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            border-top: .2px solid rgb(176, 173, 173);
+
+
+            .filter-type {
+                width: 100%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                padding: 10px 0px;
+
+                h3 {
+                    font-family: 'Source Code Pro', monospace;
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}

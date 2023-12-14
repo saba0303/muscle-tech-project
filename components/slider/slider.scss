@@ -1,0 +1,246 @@
+@media (max-width:1016px) {
+    .hero-slider-box {
+        width: 100%;
+        height: 50rem;
+        margin-top: 7rem;
+        display: flex;
+        justify-content: center;
+        display: none;
+
+        .hero-slider {
+            height: 100%;
+            width: 95%;
+            border-radius: 17px;
+
+            .swiper-pagination-bullet-active {
+                background-color: #60269E;
+
+            }
+
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                color: #60269E;
+                font-size: 5px;
+                display: none;
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+
+            .slide-self {
+                width: 100%;
+                height: 100%;
+                border-radius: 17px;
+
+                .card {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border-radius: 17px;
+
+
+
+                    .card-actions {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        .bridge,
+                        .shop {
+                            width: 48%;
+                            padding: 18px 45px;
+                            font-size: 1rem;
+                            font-family: 'Abril Fatface', serif;
+                            color: white;
+                            border-radius: 8px;
+                        }
+
+                        .bridge {
+                            background-color: #D9223B;
+                            border: #D9223B;
+
+                            &:hover {
+                                color: black;
+                                background-color: white;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .shop {
+                            background: none;
+                            border: 1px solid white;
+
+                            &:hover {
+                                color: black;
+                                background-color: white;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    div {
+                        width: 50%;
+                        z-index: 2;
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            color: white;
+                            background-color: #60269E;
+                            font-family: 'Abril Fatface', serif;
+                            align-self: flex-start;
+                            margin-bottom: -2rem;
+                            padding: 2px 5px;
+                        }
+
+                        h1 {
+                            color: white;
+                            font-family: 'Candal', sans-serif;
+                            font-size: 3rem;
+                            margin-bottom: -.3rem;
+                            width: 90%;
+                        }
+
+                        p {
+                            color: white;
+                            font-family: 'Source Code Pro', monospace;
+                            width: 80%;
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1016px) {
+    .hero-slider-box {
+        width: 100%;
+        height: 50rem;
+        margin-top: 7rem;
+        display: flex;
+        justify-content: center;
+
+        .hero-slider {
+            height: 100%;
+            width: 95%;
+            border-radius: 17px;
+
+            .swiper-pagination-bullet-active {
+                background-color: #60269E;
+
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                color: #60269E;
+                font-size: 5px;
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+
+            .slide-self {
+                width: 100%;
+                height: 100%;
+                border-radius: 17px;
+
+                .card {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border-radius: 17px;
+
+                    .card-actions {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        .bridge,
+                        .shop {
+                            width: 48%;
+                            padding: 18px 45px;
+                            font-size: 1rem;
+                            font-family: 'Abril Fatface', serif;
+                            color: white;
+                            border-radius: 8px;
+                        }
+
+                        .bridge {
+                            background-color: #D9223B;
+                            border: #D9223B;
+
+                            &:hover {
+                                color: black;
+                                background-color: white;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .shop {
+                            background: none;
+                            border: 1px solid white;
+
+                            &:hover {
+                                color: black;
+                                background-color: white;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    div {
+                        width: 40%;
+                        z-index: 2;
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            color: white;
+                            background-color: #60269E;
+                            font-family: 'Abril Fatface', serif;
+                            align-self: flex-start;
+                            margin-bottom: -2rem;
+                            padding: 2px 5px;
+                        }
+
+                        h1 {
+                            color: white;
+                            font-family: 'Candal', sans-serif;
+                            font-size: 3rem;
+                            margin-bottom: -.3rem;
+                            width: 90%;
+                        }
+
+                        p {
+                            color: white;
+                            font-family: 'Source Code Pro', monospace;
+                            width: 80%;
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}

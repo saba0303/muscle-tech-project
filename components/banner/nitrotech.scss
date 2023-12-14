@@ -1,0 +1,114 @@
+@media (max-width:1016px) {
+    .nitro-tech-banner {
+        width: 100%;
+
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .message {
+            background-color: #282828;
+            width: 90%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            font-family: 'Source Code Pro', monospace;
+            margin-top: .5rem;
+
+            button {
+                padding: 10px 25px;
+                font-family: 'Source Code Pro', monospace;
+                background-color: black;
+                color: white;
+                border: none;
+            }
+
+            span {
+                font-size: 1.5rem;
+                margin-top: .5rem;
+            }
+
+            h1 {
+                font-family: 'Grandstander', cursive;
+                font-size: 2.8rem;
+                text-align: center;
+            }
+
+            p {
+                width: 90%;
+                font-size: 1.2rem;
+                text-align: center;
+                margin-top: -1rem;
+            }
+        }
+
+        img {
+            width: 90%;
+            height: 90%;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+            border: 10px solid #282828;
+        }
+
+    }
+}
+
+@media (min-width:1016px) {
+    .nitro-tech-banner {
+        width: 100%;
+        height: 30rem;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .message {
+            background-color: #282828;
+            width: 35%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            font-family: 'Source Code Pro', monospace;
+
+            button {
+                padding: 10px 25px;
+                font-family: 'Source Code Pro', monospace;
+                background-color: black;
+                color: white;
+                border: none;
+            }
+
+            span {
+                font-size: 1.5rem;
+                margin-top: .5rem;
+            }
+
+            h1 {
+                font-family: 'Grandstander', cursive;
+                font-size: 2.8rem;
+            }
+
+            p {
+                width: 90%;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+        }
+
+        img {
+            height: 100%;
+            margin-bottom: 4rem;
+            border: 10px solid #282828;
+        }
+
+    }
+}

@@ -1,0 +1,16 @@
+@media (min-width:1016px) {
+    .video-wrapper {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:1016px) {
+    .video-wrapper {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: none;
+    }
+}
